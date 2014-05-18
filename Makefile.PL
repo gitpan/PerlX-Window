@@ -21,12 +21,12 @@ my $meta = {
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
                                        recommends => { "Hash::FieldHash" => 0, "Variable::Magic" => 0 },
-                                       requires   => { "Data::Alias" => 0, "Exporter::Shiny" => 0, "perl" => 5.008 },
+                                       requires   => { "Data::Alias" => 0, "Exporter::Shiny" => 0, "perl" => "5.016000" },
                                      },
                         test      => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "PerlX::Window" => { file => "lib/PerlX/Window.pm", version => 0.001 },
+                        "PerlX::Window" => { file => "lib/PerlX/Window.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -37,7 +37,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Window/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;

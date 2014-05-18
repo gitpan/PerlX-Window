@@ -1,11 +1,11 @@
-use 5.008;
+use 5.016000;
 use strict;
 use warnings;
 
 package PerlX::Window;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use Data::Alias;
 use Exporter::Shiny (our @EXPORT = qw( window window_pos ));
@@ -161,6 +161,8 @@ __END__
 
 =encoding utf-8
 
+=for stopwords backporting
+
 =head1 NAME
 
 PerlX::Window - sliding windows on a string or array
@@ -259,6 +261,9 @@ to that variable. This means the following are not the same:
 The second example says "Foo" infinitely because C<$tmp> is
 redefined in each loop, so is a separate variable as far as
 C<window> is concerned.
+
+This module currently requires Perl 5.16, though I believe that
+backporting it to Perl 5.8 is feasible.
 
 =head1 BUGS
 

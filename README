@@ -80,6 +80,9 @@ CAVEATS
     The second example says "Foo" infinitely because $tmp is redefined in each
     loop, so is a separate variable as far as `window` is concerned.
 
+    This module currently requires Perl 5.16, though I believe that
+    backporting it to Perl 5.8 is feasible.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=PerlX-Window>.
