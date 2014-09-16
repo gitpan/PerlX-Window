@@ -1,5 +1,5 @@
 ---
-abstract: 'a module that does something-or-other'
+abstract: 'sliding windows on a string or array'
 author:
   - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
 build_requires:
@@ -25,7 +25,7 @@ optional_features: {}
 provides:
   PerlX::Window:
     file: lib/PerlX/Window.pm
-    version: '0.003'
+    version: '0.004'
 recommends:
   Hash::FieldHash: '0'
   Variable::Magic: '0'
@@ -39,4 +39,4 @@ resources:
   homepage: https://metacpan.org/release/PerlX-Window
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-perlx-window.git
-version: '0.003'
+version: '0.004'
