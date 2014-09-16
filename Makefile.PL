@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "a module that does something-or-other",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 1,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -26,7 +26,7 @@ my $meta = {
                         test      => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "PerlX::Window" => { file => "lib/PerlX/Window.pm", version => 0.002 },
+                        "PerlX::Window" => { file => "lib/PerlX/Window.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -35,9 +35,14 @@ my $meta = {
                                         },
                         homepage     => "https://metacpan.org/release/PerlX-Window",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Window/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-perlx-window.git",
+                                          web  => "https://github.com/tobyink/p5-perlx-window",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Window/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;
